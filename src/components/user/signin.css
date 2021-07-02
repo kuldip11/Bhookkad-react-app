@@ -1,0 +1,14 @@
+.signin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input{
+    width:60% !important;
+    border-radius: 10px !important;
+    margin: 10px !important;
+    color: white !important;
+
+}

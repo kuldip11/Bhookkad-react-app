@@ -1,0 +1,27 @@
+.Text-Text{
+    font-size: medium;
+    display: flex;
+    width:50vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding:25px 80px 30px 80px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5px;
+    color: #FFF;
+    border-radius: 9px 9px 9px 9px;
+    backdrop-filter: blur(10px);
+    border:1px rgba(255, 255, 255, 0.4) solid;
+    background-color:hsla(0,0%,100%,0.1);
+}
+a{
+    font-size:x-large;
+    color:white
+}
+
+.wish{
+    width: auto;
+    height: auto;
+}

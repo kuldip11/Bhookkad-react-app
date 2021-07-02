@@ -1,0 +1,21 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input{
+    width:60% !important;
+    border-radius: 10px !important;
+    margin: 10px !important;
+    color: white !important;
+
+}
+ button{
+     color: white !important;
+     border: 1px solid white !important
+ }
+ button:hover{
+     background-color: rgba(255,255,255,0.4);
+ }

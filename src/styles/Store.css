@@ -1,0 +1,28 @@
+.store{
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    overflow:auto;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track{
+    box-shadow: none; 
+    border-radius: 5px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb{
+    background: rgb(110, 106, 106); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(182, 174, 174); 
+}

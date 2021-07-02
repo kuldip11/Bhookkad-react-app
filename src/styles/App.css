@@ -1,0 +1,29 @@
+.main{
+
+  height: 100vh;
+  width:100vw;
+  max-height: 100vh;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  
+}
+.color{
+  height: 96vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  display:flex;
+  flex-direction: row;
+  /* background-color: hsla(0,0%,100%,0.1); */
+  
+  
+}
+
+
+  ul{
+    background-color: transparent !important;
+  }
+  .background{
+    background: hsla(0,0%,100%,0.1);
+    /* width: 20vw; */
+  }

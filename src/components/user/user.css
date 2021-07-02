@@ -1,0 +1,22 @@
+.user{
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.link{
+    width:8fr;
+    height:40px;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: none !important;
+    margin: 10px;
+    padding: 5px 5px 20px 5px;
+}
+.cli{
+    background-color: rgba(255,255,255,1);
+    border-radius: 15px;
+    color:black
+}

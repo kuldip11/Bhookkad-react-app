@@ -1,0 +1,49 @@
+.know-your-city{
+    display:flex !important;
+    height: 64vh !important;
+    flex-direction: row;
+
+}
+
+.details{
+    padding-top: 40px;
+    padding-left: 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid white;
+    color:white;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 3px;
+    margin: 0px 10px 0px 10px;
+    width: 25vw;
+}
+
+.city-restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    border:1px solid white;
+    width: 50vw;
+    margin: 0px 10px 0px 10px;
+
+}
+h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.top-res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    width:100%;
+    color: white;
+}
+
+.anticon[tabindex] {
+    font-size: 30px;
+}

@@ -1,12 +1,13 @@
 .user{
     height: 64vh;
+    width:100% !important;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
 }
 .link{
-    width:8fr;
+    width:80px;
     height:40px;
     color: white;
     background-color: transparent;

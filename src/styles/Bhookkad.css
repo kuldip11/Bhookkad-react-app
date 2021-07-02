@@ -2,7 +2,7 @@ h1{
     color: white;
 }
 
-input{
+.foodInput{
     padding: 15px 20px 15px 20px;
     margin: 0px !important;
     margin-right: 10px !important;
@@ -12,7 +12,6 @@ input{
     color: #FFF;
     border: none;
     outline: none;
-    /* box-shadow: 10px 50x; */
     border-radius: 15px 0px 15px 0px;
     background-color: rgba(255, 255, 255, 0.2);
     font-size: 20px;

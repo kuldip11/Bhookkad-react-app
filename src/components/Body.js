@@ -9,7 +9,7 @@ import ContactUs from './ContactUs'
 
 const Body = ({menudata}) => {
     return (
-        <div style={{width:"80vw", height:"64vh"}}>
+        <div style={{ height:"64vh"}}>
             {menudata === "User" && <User/>}
             {menudata === "AboutUs" && <AboutUs/>}
             {menudata === "yourCity" && <KnowYourCity />}

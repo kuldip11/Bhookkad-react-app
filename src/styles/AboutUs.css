@@ -8,8 +8,12 @@
     margin-left: 100px;
     margin-right: 100px;
     color: white;
-    font-family: 'Segoe UI';
-    font-size: medium;
+    font-family: "Montserrat";
+    color:"Highlight"; 
+    text-align: justify;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 1px;
     
 }
 .title{
@@ -19,7 +23,7 @@
     justify-content: center;
     align-items: center;
     color:white;
-    font-family: 'Segoe UI';
+    font-family: Montserrat;
 }
 h1{
     color: white;

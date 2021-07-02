@@ -9,7 +9,6 @@ const Filter = () => {
   return (
     <Select
     className="filter"
-    style={{width:"100px",height:"20px"}}
       showSearch
       placeholder="Search to Select"
       optionFilterProp="children"

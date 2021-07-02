@@ -61,7 +61,7 @@ const Bhookkad = () => {
     return (
         <filterContext.Provider value = {[filterItem,setfilterItem]} style={{}}>
             <div style={{display:"flex", width:"100%",justifyContent:"center", alignItems:"center"}}>
-                <input  
+                <input  className="foodInput"
                     onKeyDown={(e) => { if(e.code==='Enter'){ setInput(e.target.value) }} }/>
                 <Filter />
             </div>

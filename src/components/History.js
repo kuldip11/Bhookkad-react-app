@@ -16,7 +16,7 @@ const History = () => {
         <tbody className="history">
             <h1>Search History</h1>
             {history.map((ele,indx)=>(
-                <tr key={indx} >
+                <tr key={indx}  style={{textAlign:"start"}}>
                     <td > 
                         <DeleteFilled style={{marginRight:"20px"}} onClick={(e)=>historyDeletHandler(e, ele.time)}/> 
                     </td>

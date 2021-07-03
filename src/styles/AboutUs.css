@@ -2,7 +2,7 @@
 .aboutus{display: flex;
     flex-direction: column;
     height: 64vh;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin-left: 100px;

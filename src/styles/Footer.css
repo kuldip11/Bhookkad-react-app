@@ -11,7 +11,8 @@ footer{
     font-size: 16px;
     padding:5px 8px;
     position: fixed;
-  width: 100vw;
+    width: 100vw;
+    font-family: "Montserrat";
 }
 footer>a>i{
     text-decoration: none;

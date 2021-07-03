@@ -21,7 +21,7 @@ const Bhookkad = () => {
     }
 
         useEffect(() => {
-            if(input!=""){
+            if(input!==""){
                 var myHeaders = new Headers();
                 myHeaders.append("user-key", "bd0694624e4a9df3fd6a90ce7addc33a");
                 myHeaders.append("Cookie", "csrf=7f45d401452bea3de7cd3d42a9367d1f; fbcity=11434; fbtrack=7764bf6c133c0e240da74b90cad9fb08; zl=en; AWSALBTG=oFyX6u6kiuXSr7MiDS6OUDIDbnHlYv34dH8j9yA/8ePmiz0+SVqM/tNrTl9wl1YNwGKQTVWckvjpIyC8Ds3rz4MLhd5wKP9I0QhFiY6IK9EgjMO00Jpcb/zwXqF4H44iQmOUF5IAWo0qvxj47gBCX2XMp2lNW1Hm1h9FAp2b2jxG5BLE6sE=; AWSALBTGCORS=oFyX6u6kiuXSr7MiDS6OUDIDbnHlYv34dH8j9yA/8ePmiz0+SVqM/tNrTl9wl1YNwGKQTVWckvjpIyC8Ds3rz4MLhd5wKP9I0QhFiY6IK9EgjMO00Jpcb/zwXqF4H44iQmOUF5IAWo0qvxj47gBCX2XMp2lNW1Hm1h9FAp2b2jxG5BLE6sE=");
@@ -66,7 +66,7 @@ const Bhookkad = () => {
                 <Filter />
             </div>
 
-            {!flag && <div style={{height:"52vh"}}/>}   
+            {!flag && <div style={{height:"69vh"}}/>}   
             {flag && 
                 <div className="resList">
                     <DoubleLeftOutlined style={{width:"100px"}} onClick={leftClickHandler}/>

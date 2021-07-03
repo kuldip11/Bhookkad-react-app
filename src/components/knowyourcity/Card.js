@@ -1,5 +1,5 @@
-import React,{useState, useEffect, useContext} from 'react'
-import { HeartOutlined, HeartFilled } from "@ant-design/icons";
+import React,{ useContext } from 'react'
+import { HeartFilled } from "@ant-design/icons";
 import { wishContext } from '../../App';
 import { message, Rate } from 'antd';
 import 'antd/dist/antd.css';
@@ -15,9 +15,15 @@ const CityCard = ({data}) => {
     }
 
     return (
-        <div style={{width:"30vw"}}>
+        <div style={{width:"40vw"}}>
                 <span>
-                    <a className="re" href={data["restaurant"]["url"]} target="_blank">{data["restaurant"]["name"]} </a>
+                    <a 
+                        href={data["restaurant"]["url"]} 
+                        target="_blank" 
+                        rel="noreferrer"
+                        style={{fontSize:"40px",fontWeight:"bold"}}>
+                        {data["restaurant"]["name"]}  
+                    </a>
                         <span>
                             <HeartFilled style={{height:"15px", color:"red"}} onClick={wishAddHandler}/>
                         </span>

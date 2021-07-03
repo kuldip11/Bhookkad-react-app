@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    font-family: "Montserrat";
 }
 
 .input {
@@ -10,5 +11,6 @@
     border-radius: 10px !important;
     margin: 10px !important;
     color: white !important;
+    font-family: "Montserrat";
 
 }

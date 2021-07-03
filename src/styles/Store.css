@@ -1,11 +1,13 @@
 .store{
-    height: 64vh;
+    height: 76vh;
+    /* width:100vw; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     text-align: center;
     overflow:auto;
+    font-family: "Montserrat";
 }
 ::-webkit-scrollbar{
     width: 8px;

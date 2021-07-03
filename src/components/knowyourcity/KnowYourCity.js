@@ -44,9 +44,7 @@ const KnowYourCity = () => {
     return (<>
         {cityFlag && <div className="know-your-city">
             <div className = "details">
-                <h3>Country: {cityData["location"]["country_name"]}</h3>
-                <h3>City: {cityData["city"]}</h3>
-                <h3>CubZone: {cityData["subzone"]}</h3>
+                <h3 style={{fontSize:"25px", textShadow:"-moz-initial"}}>{cityData["city"]}, {cityData["location"]["country_name"]}</h3>
                 <h3>Restaurants Available: {cityData["num_restaurant"]}</h3>
                 <h3>Nightlife Restaurants: {cityData["nightlife_res"]}</h3>
                 <h3>Top Cuisines:</h3>
@@ -55,7 +53,7 @@ const KnowYourCity = () => {
                 </ul>
             </div>
             <div className="city-restaurants">
-                <h1 style={{width:"100%"}}>Best Rated Restaurants</h1>
+                <h1 style={{width:"100%",marginTop:"50px"}}>Best Rated Restaurants</h1>
                 <div className="top-res">
                     <DoubleLeftOutlined style={{width:"100px"}} onClick={leftClickHandler}/>
                     <Card data={cityData["best_rated_restaurant"][indx]} />

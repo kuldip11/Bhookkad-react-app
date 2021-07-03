@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    font-family: "Montserrat";
 }
 
 .input{
@@ -10,11 +11,13 @@
     border-radius: 10px !important;
     margin: 10px !important;
     color: white !important;
+    font-family: "Montserrat";
 
 }
  button{
      color: white !important;
-     border: 1px solid white !important
+     border: 1px solid white !important;
+     font-family: "Montserrat";
  }
  button:hover{
      background-color: rgba(255,255,255,0.4);

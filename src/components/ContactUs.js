@@ -21,10 +21,10 @@ const ContactUs = () => {
     }
 
     return (
-        <div style={{display:"flex", flexDirection:"column", textAlign:"center",alignItems:"center"}}>
+        <div style={{display:"flex",height:"50vh", flexDirection:"column",justifyContent:"center", textAlign:"center",alignItems:"center"}}>
             <h1>Feedback</h1>
-            <input type="text" placeholder="Name" onChange={(e)=>{setfeedback({...feedback,name:e.target.value})}}/>
-            <input type="text" placeholder="Email" onChange={(e)=>{setfeedback({...feedback,email:e.target.value})}}/>
+            <input type="text" className="input" placeholder="Name" onChange={(e)=>{setfeedback({...feedback,name:e.target.value})}}/>
+            <input type="text" className="input" placeholder="Email" onChange={(e)=>{setfeedback({...feedback,email:e.target.value})}}/>
             <textarea type="textarea" className="textarea" placeholder="Feedback" onChange={(e)=>{setfeedback({...feedback,comment:e.target.value})}}/>
             <button onclick={()=>sendFeedbackHandler}>Send</button>
         </div>

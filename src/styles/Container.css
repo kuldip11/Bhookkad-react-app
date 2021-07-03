@@ -2,8 +2,6 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .title{
     height:30vh;
@@ -12,17 +10,16 @@
     justify-content: center;
     align-items: center;
     color:white;
-    font-family: 'Segoe UI';
+    font-family: "Montserrat";
 }
 
-input{
+.input{
     padding: 15px 20px 15px 20px;
-    margin: 10px 10px 10px 75px;
     width: 40vh;
     height: 50px;
     margin-bottom: 30px;
-    font-family: Lato;
-    color: #FFF;
+    font-family: "Montserrat";
+    color: #FFFF;
     border: none;
     outline: none;
     box-shadow: 10px 50x;
@@ -34,7 +31,7 @@ input{
     transition: 0.2s ease-out;    
 }
 
-input:focus{
+.input:focus{
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px  rgba(255, 255, 255, 0.4) solid;
 
@@ -50,7 +47,7 @@ button{
     outline: none;
     border-radius: 5px 5px 5px 5px;
     background-color: rgba(255, 255, 255, 0.1);  
-    font-family: Lato;
+    font-family: "Montserrat";
 }
 .btn{
     height:34vh;
@@ -65,4 +62,5 @@ button{
     align-items: center;
     justify-content: center;
     overflow:auto;
+    font-family: "Montserrat" !important;
 }

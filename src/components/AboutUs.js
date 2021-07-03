@@ -1,4 +1,3 @@
-import Base from 'antd/lib/typography/Base';
 import React from 'react';
 import "../styles/AboutUs.css";
 const AboutUs = () =>{

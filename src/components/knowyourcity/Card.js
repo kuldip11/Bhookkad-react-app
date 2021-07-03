@@ -9,8 +9,20 @@ const CityCard = ({data}) => {
     const [wish, setwish] = useContext(wishContext)
 
     const wishAddHandler =  () => {
-        setwish([...wish, {name:data["restaurant"]["name"], url:data["restaurant"]["url"]}])
+        const val = wish.filter((item) => item.name === data["restaurant"]["name"] )
+        if(val.length === 0){
+        setwish(
+            [
+                ...wish, {
+                    name:data["restaurant"]["name"], 
+                    url:data["restaurant"]["url"], 
+                    ratings:data["restaurant"]["user_rating"]["aggregate_rating"],
+                    time:data["restaurant"]["timings"]
+                }])
         message.success("Restaurant added..");
+        } else{
+            message.warning("Restaurant is already added");
+        }
         
     }
 
@@ -29,7 +41,8 @@ const CityCard = ({data}) => {
                         </span>
                 </span>
                 <p>Average cost for two: {data["restaurant"]["average_cost_for_two"]}</p>
-                <p>Cuisines Available: {data["restaurant"]["cuisines"]}</p>
+                <p>Cuisines Available: {data["restaurant"]["cuisines"]}</p> 
+                <p>Timing: {data["restaurant"]["timings"]}</p>
                 <p className="restaurants-info">Rating: <Rate allowHalf disabled defaultValue={data["restaurant"]["user_rating"]["aggregate_rating"]} /></p>    
             
         </div>

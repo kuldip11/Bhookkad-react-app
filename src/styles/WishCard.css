@@ -6,15 +6,18 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding:25px 80px 30px 80px;
+    padding:15px 80px 15px 80px;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 5px;
     color: #FFF;
     border-radius: 9px 9px 9px 9px;
     backdrop-filter: blur(10px);
-    border:1px rgba(255, 255, 255, 0.4) solid;
+    border:1px white solid;
     background-color:hsla(0,0%,100%,0.1);
+}
+.Text-Text:hover{
+    background-color: rgba(255,255,255,0.3);
 }
 a{
     font-size:x-large;

@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { wishContext } from '../App'
 import { DislikeFilled } from "@ant-design/icons";
-import { message } from 'antd';
+import { message, Rate } from 'antd';
 import "../styles/WishCard.css"
 
 function WishCard() {
@@ -13,7 +13,7 @@ function WishCard() {
         e.preventDefault();
         let newList = wish.filter((item) => item.name !== clickedName );
         setwish(newList)
-        message.success('repository successfully deleted');
+        message.success('Restaurant deleted');
     }
 
     return (
@@ -28,6 +28,8 @@ function WishCard() {
                                 <DislikeFilled  onClick={(e)=>wishDeletHandler(e, ele.name)}/>
                             </span>
                         </span>
+                        <p>Timing: {ele.time}</p>
+                        <p className="restaurants-info">Rating: <Rate allowHalf disabled defaultValue={ele.ratings} /></p>
                     </div>
                 </div>
             ))}

@@ -23,7 +23,7 @@ function Signup() {
         <div className="signin">
             <input type="text" className="input" placeholder="Email" onChange={(e)=>{setUser({...user,email:e.target.value})}}/>
             <input type="password" className="input" placeholder="Password"onChange={(e)=>{setUser({...user,password:e.target.value})}}/>
-            <button onClick={loginHandler}>Register</button>
+            <button onClick={loginHandler}>Login</button>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React,{ useState, useEffect} from 'react'
 import "./city.css"
 import Card from './Card';
 import { DoubleLeftOutlined, DoubleRightOutlined } from "@ant-design/icons";
+import { Spin } from 'antd';
 
 const KnowYourCity = () => {
 
@@ -66,6 +67,10 @@ const KnowYourCity = () => {
     }, [])
 
     return (<>
+        {!cityFlag && <div style={{display:"flex",justifyContent:"center",alignItems:"center", height:"100%", width:"100%"}}>
+             <Spin  size="large"/>
+             <h5 style={{color:"white"}}>Loading Please Wait...</h5> 
+        </div>}
         {cityFlag && <div className="know-your-city">
             <div className = "details">
                 <h3 style={{fontSize:"25px", textShadow:"-moz-initial"}}>{cityData["city"]}, {cityData["location"]["country_name"]}</h3>

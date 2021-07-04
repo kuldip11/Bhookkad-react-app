@@ -12,6 +12,8 @@ const Bhookkad = () => {
     const [flag, setflag] =useState(false);
     const [restau, setrestau] = useState([]);
     const [indx,setindx] = useState(0);
+    const [latitude, setLatitude] = useState("")
+    const [longitude, setLongitude] = useState("")
     const [filterItem,setfilterItem] =useState("real_distance")
 
     const currentTime = () => {
@@ -32,7 +34,7 @@ const Bhookkad = () => {
                     redirect: 'follow'
                 };
 
-                fetch(`https://developers.zomato.com/api/v2.1/search?q=${input}&lat=23.67&lon=86.95&count=10&sort=${filterItem}&order=asc`, requestOptions)
+                fetch(`https://developers.zomato.com/api/v2.1/search?q=${input}&lat=${latitude}&lon=${longitude}&count=10&sort=${filterItem}&order=asc`, requestOptions)
                 .then(response => response.json())
                 .then(result => {
                     if(result["results_found"]!==0){
@@ -43,6 +45,13 @@ const Bhookkad = () => {
                     })
             }
     },[input,filterItem])
+
+    useEffect(() => {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            setLatitude(position.coords.latitude.toFixed(2))
+            setLongitude(position.coords.longitude.toFixed(2))
+          });
+    }, [])
 
 
     const rightClickHandler = () => {

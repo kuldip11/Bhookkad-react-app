@@ -9,6 +9,7 @@ import {
   ShoppingCartOutlined,
   SettingOutlined,
   SmileOutlined,
+  EnvironmentOutlined
 } from '@ant-design/icons';
 import { menuebarContext } from "../App"
 import "../styles/App.css"
@@ -24,7 +25,7 @@ const [menudata, setmenudata] =useContext(menuebarContext);
 
     return (
       <div  >
-        <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16 }}>
+        <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16,width:"auto !important" }}>
           {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
         Menu
         </Button>
@@ -46,7 +47,7 @@ const [menudata, setmenudata] =useContext(menuebarContext);
             About Us
           </Menu.Item>
 
-          <Menu.Item key="2" icon={<SmileOutlined />} onClick={()=>setmenudata("yourCity")}>
+          <Menu.Item key="2" icon={<EnvironmentOutlined />} onClick={()=>setmenudata("yourCity")}>
             Know Your City
           </Menu.Item>
 

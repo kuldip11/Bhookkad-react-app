@@ -50,7 +50,6 @@ const KnowYourCity = () => {
 
     useEffect(() => {
         if(latitude!==""){
-            console.log(latitude,longitude)
             fetch(`https://developers.zomato.com/api/v2.1/cities?&lat=${latitude}&lon=${longitude}&apikey=eb2aace27fa43d3d8ffa60ed4029767d`)
             .then(response => response.json())
             .then(result => {

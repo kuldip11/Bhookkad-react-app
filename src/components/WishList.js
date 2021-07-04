@@ -5,7 +5,6 @@ import { message, Rate } from "antd";
 import "../styles/WishCard.css";
 
 function WishCard() {
-  console.log("hi");
   const [wish, setwish] = useContext(wishContext);
 
   const wishDeletHandler = (e, clickedName) => {

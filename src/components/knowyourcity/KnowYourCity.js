@@ -67,7 +67,7 @@ const KnowYourCity = () => {
     }, [])
 
     return (<>
-        {!cityFlag && <div style={{display:"flex",justifyContent:"center",alignItems:"center", height:"100%", width:"100%"}}>
+        {!cityFlag && <div style={{display:"flex", flexDirection:"column",justifyContent:"center",alignItems:"center", height:"100%", width:"100%"}}>
              <Spin  size="large"/>
              <h5 style={{color:"white"}}>Loading Please Wait...</h5> 
         </div>}

@@ -79,9 +79,9 @@ const KnowYourCity = () => {
             <div className="city-restaurants">
                 <h1 style={{width:"100%",marginTop:"50px"}}>Best Rated Restaurants</h1>
                 <div className="top-res">
-                    <DoubleLeftOutlined style={{width:"100px"}} onClick={leftClickHandler}/>
+                    <DoubleLeftOutlined onClick={leftClickHandler}/>
                     <Card data={cityData["best_rated_restaurant"][indx]} />
-                    <DoubleRightOutlined style={{width:"100px"}} onClick={rightClickHandler}/>
+                    <DoubleRightOutlined onClick={rightClickHandler}/>
                 </div>
             </div>
         </div>

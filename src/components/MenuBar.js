@@ -25,7 +25,7 @@ const [menudata, setmenudata] =useContext(menuebarContext);
 
     return (
       <div  >
-        <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16,width:"auto !important" }}>
+        <Button type="primary" onClick={toggleCollapsed} style={{ marginRight:"1px !important", marginLeft:"2px !important", width:"85px" }}>
           {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
         Menu
         </Button>

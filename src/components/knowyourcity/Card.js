@@ -27,7 +27,7 @@ const CityCard = ({data}) => {
     }
 
     return (
-        <div style={{width:"40vw"}}>
+        <div style={{width:"60%"}}>
                 <span>
                     <a 
                         href={data["restaurant"]["url"]} 

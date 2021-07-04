@@ -1,6 +1,7 @@
 .know-your-city{
     display:flex !important;
     height: 100% !important;
+    width:99% !important;
     flex-direction: row;
 
 }
@@ -17,7 +18,7 @@
     background-color: rgba(255,255,255,0.1);
     border-radius: 3px;
     margin: 0px 10px 0px 10px;
-    width: 25vw;
+    width: 25%;
     font-family: "Montserrat" !important;
 }
 
@@ -28,7 +29,7 @@
     align-items: flex-start;
     text-align: center;
     border:1px solid white;
-    width: 60vw;
+    width: 98% !important;
     font-family: "Montserrat";
 
 }
